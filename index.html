@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 
 <body>
-    <div > 
+    <style>
+        video::-webkit-media-controls-enclosure {
+  display:none !important;
+}
+.back{
+    z-index: -1;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    position:fixed;
+}
+.fornt{
+    z-index: 10;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    height: 100vh;
+   position: fixed;
+   
+}
+    </style>
+    <div  class="back"> 
         
-        <video width="100%" height="100%" style="object-fit: cover;" controls autoplay muted loop playsinline >
+        <video width="100%" height="100%" style="object-fit: cover;"  controls autoplay muted loop playsinline >
         <source src="backgroud.mp4" type="video/mp4">
       
       Your browser does not support the video tag.
       </video>    
+    </div>
+    <div class="fornt">
+
     </div>
 
 </body>
